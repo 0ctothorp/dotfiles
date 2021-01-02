@@ -123,6 +123,8 @@ export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G
 
 export PATH="$PATH:/opt/mssql-tools/bin"
 
+source ~/.secrets
+
 # vi mode
 set -o vi
 
