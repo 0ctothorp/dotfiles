@@ -28,7 +28,7 @@
   # Enable vim compatible mode, avoid changing origin vim key bindings
   vimcompatible = true
   max_column = 80
-  # filemanager = "nerdtree"
+# filemanager = "nerdtree"
 
 # Enable autocomplete layer
 [[layers]]

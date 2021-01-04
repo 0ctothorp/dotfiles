@@ -4,3 +4,8 @@
 !/.SpaceVim.d
 /.SpaceVim.d/.netrwhist
 !.vimrc_back
+!.vimrc
+!/.config
+/.config/*
+!/.config/nvim
+/.config/nvim/.netrwhist

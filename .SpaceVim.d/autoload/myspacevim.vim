@@ -8,3 +8,4 @@ func! myspacevim#before() abort
 
   " let g:neomake_typescriptreact_enabled_makers = ['./node_modules/.bin/eslint']
 endf
+

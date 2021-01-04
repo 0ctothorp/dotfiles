@@ -19,6 +19,10 @@ syntax on
 " source for other completion plugins, like Deoplete.
 let g:ale_completion_enabled = 1
 
+" ALE supports automatic imports from external modules. This behavior is
+" disabled by default and can be enabled by setting
+let g:ale_completion_autoimport = 1
+
 "load plugins
 packloadall
 "TODO: Remove vim-prettier since ALE provides its functionality
@@ -26,7 +30,7 @@ packloadall
 " Triggering ALE's omni-completion manually with <C-x><C-o>
 set omnifunc=ale#completion#OmniFunc
 
-let g:ale_fixers = { 'typescript': ['prettier'], 'javascript': ['prettier'] }
+let g:ale_fixers = { 'typescript': ['prettier', 'eslint'], 'javascript': ['prettier', 'eslint'] }
 let g:ale_fix_on_save = 1
 
 " Load all of the helptags now, after plugins have been loaded.
