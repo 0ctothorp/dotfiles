@@ -26,8 +26,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " :CocInstall coc-eslint
 " :CocInstall coc-prettier
 
-" Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'preservim/nerdtree'
+" detect and apply indentation style
+Plug 'tpope/vim-sleuth'
+
+" Parentheses, brackets, quotes, XML tags and more - editing in pairs
+Plug 'tpope/vim-surround'
  
 " Initialize plugin system
 call plug#end()
@@ -213,3 +216,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " ------------------------------
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" ------------------------------
+" Key maps
+" ------------------------------
+nmap <space>e :CocCommand explorer<CR>
