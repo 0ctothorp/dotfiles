@@ -31,6 +31,8 @@ Plug 'tpope/vim-sleuth'
 
 " Parentheses, brackets, quotes, XML tags and more - editing in pairs
 Plug 'tpope/vim-surround'
+
+Plug 'kevinoid/vim-jsonc'
  
 " Initialize plugin system
 call plug#end()
