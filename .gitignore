@@ -5,7 +5,14 @@
 /.SpaceVim.d/.netrwhist
 !.vimrc_back
 !.vimrc
+
+# .config
 !/.config
 /.config/*
+
 !/.config/nvim
 /.config/nvim/.netrwhist
+
+!/.config/alacritty
+!/.config/alacritty/*
+
