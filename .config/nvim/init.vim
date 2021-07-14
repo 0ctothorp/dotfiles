@@ -1,3 +1,7 @@
+if exists ('g:vscode')
+  finish
+endif
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'

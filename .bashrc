@@ -102,7 +102,7 @@ alias reset-wifi="sudo /etc/init.d/network-manager restart"
 alias processes="ps -A -o pid,comm,%cpu,%mem k-%mem,-%cpu | head"
 # I could probably do it without the grep
 alias real-size="ls -lRS | grep ^- | awk '{ sum += \$5 }; END { print sum }'"
-alias sqlvps="sqlcmd -S 146.59.14.12 -U sa -P"
+alias rm="rm -i"
 
 ###
 # Environment variables & stuff
@@ -133,3 +133,5 @@ set -o vi
 # [[ $- != *i* ]] && return
 # Otherwise start tmux
 # [[ -z "$TMUX" ]] && exec tmux
+source "$HOME/.cargo/env"
+source /home/octothorp/sources/alacritty/extra/completions/alacritty.bash
